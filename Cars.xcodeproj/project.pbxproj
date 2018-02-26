@@ -14,6 +14,8 @@
 		9FEE0DE22044CAB0004B4A47 /* CarsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE0DDF2044CAAF004B4A47 /* CarsTableViewController.swift */; };
 		9FEE0DE32044CAB0004B4A47 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE0DE02044CAAF004B4A47 /* AddEditViewController.swift */; };
 		9FEE0DE42044CAB0004B4A47 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE0DE12044CAB0004B4A47 /* CarViewController.swift */; };
+		9FEE0DE72044CC1A004B4A47 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE0DE52044CC1A004B4A47 /* Car.swift */; };
+		9FEE0DE82044CC1A004B4A47 /* REST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FEE0DE62044CC1A004B4A47 /* REST.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		9FEE0DDF2044CAAF004B4A47 /* CarsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarsTableViewController.swift; sourceTree = "<group>"; };
 		9FEE0DE02044CAAF004B4A47 /* AddEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
 		9FEE0DE12044CAB0004B4A47 /* CarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
+		9FEE0DE52044CC1A004B4A47 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		9FEE0DE62044CC1A004B4A47 /* REST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = REST.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		9FEE0DCC2044C9FE004B4A47 /* Cars */ = {
 			isa = PBXGroup;
 			children = (
+				9FEE0DE52044CC1A004B4A47 /* Car.swift */,
+				9FEE0DE62044CC1A004B4A47 /* REST.swift */,
 				9FEE0DE02044CAAF004B4A47 /* AddEditViewController.swift */,
 				9FEE0DDF2044CAAF004B4A47 /* CarsTableViewController.swift */,
 				9FEE0DE12044CAB0004B4A47 /* CarViewController.swift */,
@@ -143,7 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9FEE0DE22044CAB0004B4A47 /* CarsTableViewController.swift in Sources */,
+				9FEE0DE82044CC1A004B4A47 /* REST.swift in Sources */,
 				9FEE0DCE2044C9FE004B4A47 /* AppDelegate.swift in Sources */,
+				9FEE0DE72044CC1A004B4A47 /* Car.swift in Sources */,
 				9FEE0DE32044CAB0004B4A47 /* AddEditViewController.swift in Sources */,
 				9FEE0DE42044CAB0004B4A47 /* CarViewController.swift in Sources */,
 			);
