@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import WebKit
 
 class CarViewController: UIViewController {
 
     @IBOutlet weak var lbBrand: UILabel!
     @IBOutlet weak var lbGasType: UILabel!
     @IBOutlet weak var lbPrice: UILabel!
+    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet weak var loading: UIActivityIndicatorView!
     
     var car: Car!
     
@@ -32,6 +35,17 @@ class CarViewController: UIViewController {
         self.lbBrand.text = self.car.brand
         self.lbGasType.text = self.car.gas
         self.lbPrice.text = "R$ \(self.car.price)"
+        
+        let name = (self.title! + "+" + self.car.brand).replacingOccurrences(of: " ", with: "+")
+        let urlString = "https://www.google.com/search?q=\(name)&tbm=isch"
+        let url = URL(string: urlString)
+        let request = URLRequest(url: url!)
+        self.webView.allowsBackForwardNavigationGestures = true
+        self.webView.allowsLinkPreview = true
+        self.webView.navigationDelegate = self
+        self.webView.uiDelegate = self
+        self.webView.load(request)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -49,4 +63,12 @@ class CarViewController: UIViewController {
     }
     */
 
+}
+
+extension CarViewController: WKUIDelegate, WKNavigationDelegate{
+    
+    func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+        self.loading.stopAnimating()
+    }
+    
 }
