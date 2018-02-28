@@ -29,3 +29,7 @@ class Car: Codable {
         }
     }
 }
+
+struct Brand: Codable {
+    let  fipe_name : String
+}

@@ -98,7 +98,7 @@ class REST{
     }
     
     class func save(car: Car, onComplete: @escaping (Bool) -> Void) {
-        self.applyOperation(car: car, operation: .save, onComplete: onComplete)
+       self.applyOperation(car: car, operation: .save, onComplete: onComplete)
     }
     
     class func update(car: Car, onComplete: @escaping (Bool) -> Void) {
@@ -118,12 +118,12 @@ class REST{
         var httpMethod : String
         var request = URLRequest(url: url)
         switch operation {
-        case .save:
-            httpMethod = "POST"
-        case .update:
-            httpMethod = "PUT"
-        case .delete:
-            httpMethod = "DELETE"
+            case .save:
+                httpMethod = "POST"
+            case .update:
+                httpMethod = "PUT"
+            case .delete:
+                httpMethod = "DELETE"
         }
         
         request.httpMethod = httpMethod
@@ -146,4 +146,3 @@ class REST{
         dataTask.resume()
     }
 }
-

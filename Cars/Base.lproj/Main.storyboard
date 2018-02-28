@@ -48,7 +48,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="FpI-Sy-Esc" kind="show" id="bIR-kt-5uk"/>
+                                    <segue destination="FpI-Sy-Esc" kind="show" identifier="viewSegue" id="bIR-kt-5uk"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -256,6 +256,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Unn-qu-cRI"/>
+        <segue reference="kKk-qI-2Ya"/>
     </inferredMetricsTieBreakers>
 </document>
